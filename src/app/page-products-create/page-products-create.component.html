@@ -1,0 +1,13 @@
+<h1>
+        Create Products
+</h1>
+
+<ul *ngFor="let product of products">
+        <a [routerLink]="['./', product.id]">
+        {{ product.name }} -{{ product.sellingPrice }} 
+        <!--{{product.image}}-->
+        </a>
+        <button (click)="navigateTo(product.id)">
+                Go to Details
+        </button>
+</ul>

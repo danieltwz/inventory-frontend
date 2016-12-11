@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  yourName = 'pr0';
+  title = 'noob la app works!';
+  noOfClicks = 0;
+
+  keepTrack(isClicked: boolean) {
+    if (isClicked){
+      this.noOfClicks++;
+    }
+
+    console.log('total clicks: ', this.noOfClicks);
+  }
 }
